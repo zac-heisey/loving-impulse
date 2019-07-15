@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.html
 title: Latest Blog Posts
+description: Latest blog posts description...
 ---
 
 <!-- Pull in content from posts directory -->
