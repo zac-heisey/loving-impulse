@@ -1,9 +1,9 @@
 {
-  "title": "Test Eleventy Site",
+  "title": "Loving Impulse",
   "url": "#",
-  "description": "This is a test site using Eleventy (11ty.io), a static site generator written in JavaScript. It is intended to be a boilerplate for future 11ty projects",
+  "description": "TBD",
   "logo": "/images/11ty-logo.png",
-  "author": "Zac Heisey",
+  "author": "Renee Nemmers",
   "email": "test@aol.com",
   "social": [
     {
@@ -21,11 +21,5 @@
     "ecommerce": "Coming Soon",
     "search": "Coming Soon",
     "repo": "https://github.com/zac-heisey/test-eleventy-site"
-  },
-  "staticgen": {
-    "languages": ["JavaScript"],
-    "templates": ["Liquid", "Nunjucks", "Handlebars", "Mustache", "EJS", "Haml", "Pug", "JavaScript", "HTML", "Markdown"],
-    "license": "MIT",
-    "description": "A simpler static site generator. An alternative to Jekyll. Written in JavaScript. Transforms a directory of templates (of varying types) into HTML. Works with HTML, Markdown, Liquid, Nunjucks, Handlebars, Mustache, EJS, Haml, Pug, and JavaScript Template Literals."
   }
 }
