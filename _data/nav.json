@@ -5,26 +5,10 @@
   },
   {
     "name": "About",
-    "url": "/about",
-    "submenu": [
-      {
-        "name": "README",
-        "url": "https://github.com/zac-heisey/test-eleventy-site/blob/master/README.md"
-      }
-    ]
+    "url": "/about"
   },
   {
     "name": "Blog",
-    "url": "/blog",
-    "submenu": [
-      {
-        "name": "Post 1",
-        "url": "/posts/post1"
-      },
-      {
-        "name": "Post 2",
-        "url": "/posts/post2"
-      }
-    ]
+    "url": "/blog"
   }
 ]

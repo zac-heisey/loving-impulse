@@ -2,14 +2,6 @@
 permalink: /js/main.js
 ---
 
-// Randomly change case of letters in header title
-var headerTitle = document.querySelector('#header-title');
-
-headerTitle.textContent = headerTitle.textContent.split('').map(function(letter) {
-  chance = Math.round(Math.random());
-  return letter = chance ? letter.toUpperCase() : letter.toLowerCase();
-}).join('');
-
 // Toggle mobile menu dropdown
 var menuIcon = document.querySelector('#menu-icon');
 var mainMenu = document.querySelector('.main-menu');

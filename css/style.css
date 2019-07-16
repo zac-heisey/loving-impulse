@@ -27,21 +27,6 @@ body {
   justify-content: space-between;
 }
 
-h1, h2, h3 {
-  font-family: 'Major Mono Display', monospace;
-}
-
-a {
-	color: var(--primary-color);
-  text-decoration: none;
-}
-
-a:hover {
-  border-bottom: 3px solid var(--primary-color);
-  padding-bottom: 1px;
-  transition: 0.2s ease;
-}
-
 /* Header & Footer Styles */
 
 header {
@@ -50,8 +35,6 @@ header {
 }
 
 header, footer {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
 	flex-shrink: 0;
 }
 
@@ -70,49 +53,7 @@ li.menu-item {
   margin: 16px;
 }
 
-li.menu-item:hover > ul.submenu {
-  opacity: 1;
-  visibility: visible;
-}
-
-ul.submenu {
-  position: absolute;
-  left: 0;
-  top: 150%;
-  min-width: 5rem;
-	background-color: var(--primary-color);
-  text-align: left;
-  border-radius: 5px;
-  padding: 10px;
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-li.submenu-item {
-  margin-bottom: .65rem;
-}
-
-header a, footer a {
-	color: var(--secondary-color);
-}
-
-header a:hover, footer a:hover {
-  border-bottom: 3px solid var(--secondary-color);
-  padding-bottom: 1px;
-  transition: 0.2s ease;
-}
-
-footer#eleventy-logo {
-	max-width: 30px;
-}
-
-/*== Page & Post Styles ==*/
+/*== Layout Styles ==*/
 
 .wrapper {
   width: 65%;
@@ -124,11 +65,26 @@ main, article {
   line-height: 1.75;
 }
 
-/* About Page */
+/* List Layout Styles */
 
-img#eleventy-logo {
-  width: 20%;
-	min-width: 100px;
+img.thumbnail {
+	min-width: 300px;
+	height: auto;
+	max-height: 225px;
+}
+
+#list-content .list-item {
+	display: flex;
+	margin: 4rem 0;
+}
+
+.list-item-info {
+	padding-left: 2rem;
+}
+
+.list-item-info h2,
+.list-item-info p {
+	margin: 0 0 0.5rem 0;
 }
 
 /*== Media Queries ==*/
@@ -173,14 +129,6 @@ img#eleventy-logo {
 		left: 0;
 		width: 100vw;
 		background-color: var(--primary-color);
-	}
-
-	ul.submenu {
-		position: static;
-		opacity: 1;
-		visibility: visible;
-		background-color: transparent;
-		padding-bottom: 0;
 	}
 
 	/* Page & Post */
