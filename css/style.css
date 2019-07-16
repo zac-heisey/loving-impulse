@@ -30,8 +30,7 @@ body {
 /* Header & Footer Styles */
 
 header {
-  display: flex;
-  justify-content: space-around;
+  margin: 1rem auto;
 }
 
 header, footer {
@@ -75,7 +74,7 @@ img.thumbnail {
 
 #list-content .list-item {
 	display: flex;
-	margin: 4rem 0;
+	margin-bottom: 4rem;
 }
 
 .list-item-info {
