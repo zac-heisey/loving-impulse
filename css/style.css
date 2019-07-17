@@ -1,8 +1,10 @@
 /*== CSS Variables ==*/
 
 :root {
-	--primary-color: #222222; /* Dark Gray */
-  --secondary-color: #ffffff; /* White */
+	--color-1: #566270; /* Slate Gray */
+  --color-2: #FFFFF3; /* Off-white */
+	--color-3: #E0E3DA; /* Gray-ish */
+	--color-4: #A593E0; /* Purple */
 }
 
 /*== Global Resets ==*/
@@ -19,12 +21,22 @@ html, body {
 /*== Global Styles ==*/
 
 body {
-  color: var(--primary-color);
+  color: var(--color-1);
+	background-color: var(--color-2);
   font-family: helvetica, arial, sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+h1, h2, h3 {
+	color: var(--color-4);
+}
+
+hr {
+	border: 1px solid var(--color-3);
+	width: 70%;
 }
 
 /* Header & Footer Styles */
@@ -72,7 +84,7 @@ img.thumbnail {
 	max-height: 225px;
 }
 
-#list-content .list-item {
+.list-item {
 	display: flex;
 	margin-bottom: 4rem;
 }
@@ -127,7 +139,7 @@ img.thumbnail {
 		margin-top: 0;
 		left: 0;
 		width: 100vw;
-		background-color: var(--primary-color);
+		background-color: var(--color-1);
 	}
 
 	/* Page & Post */
