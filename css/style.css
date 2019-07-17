@@ -7,6 +7,7 @@
 	--color-4: #A593E0; /* Purple */
 }
 
+
 /*== Global Resets ==*/
 
 *, *:before, *:after {
@@ -17,6 +18,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 
 /*== Global Styles ==*/
 
@@ -32,6 +34,23 @@ body {
 
 h1, h2, h3 {
 	color: var(--color-4);
+	font-family: 'Leckerli One', cursive;
+	text-shadow: 1px 2px #551A8B;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+a {
+	color: var(--color-4);
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 3px solid #551A8B;
+  padding-bottom: 1px;
+  transition: 0.2s ease;
 }
 
 hr {
@@ -43,6 +62,7 @@ hr {
 
 header {
   margin: 1rem auto;
+	text-align: center;
 }
 
 header, footer {
@@ -63,6 +83,7 @@ li.menu-item {
   display: inline-block;
   margin: 16px;
 }
+
 
 /*== Layout Styles ==*/
 
@@ -97,6 +118,15 @@ img.thumbnail {
 .list-item-info p {
 	margin: 0 0 0.5rem 0;
 }
+
+/* Post Layout Styles */
+
+img.full {
+	width: 100%;
+	max-height: 400px;
+	object-fit: cover;
+}
+
 
 /*== Media Queries ==*/
 

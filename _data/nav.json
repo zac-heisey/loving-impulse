@@ -5,10 +5,30 @@
   },
   {
     "name": "About",
-    "url": "/about"
+    "url": "/about/"
   },
   {
-    "name": "Blog",
-    "url": "/blog"
+    "name": "Breathe",
+    "url": "/tags/breathe/"
+  },
+  {
+    "name": "Simplify",
+    "url": "/tags/simplify/"
+  },
+  {
+    "name": "Eat",
+    "url": "/tags/eat/"
+  },
+  {
+    "name": "Act",
+    "url": "/tags/act/"
+  },
+  {
+    "name": "Move",
+    "url": "/tags/move/"
+  },
+  {
+    "name": "Contact",
+    "url": "/contact/"
   }
 ]
