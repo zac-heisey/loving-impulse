@@ -2,7 +2,7 @@
 layout: layouts/post.html
 title: Blog Post 2
 description: TBD
-image: /images/11ty-logo.png
+image: /images/image2.jpg
 tags:
   - post
   - breath

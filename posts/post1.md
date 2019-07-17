@@ -2,7 +2,7 @@
 layout: layouts/post.html
 title: Blog Post 1
 description: TBD
-image: /images/11ty-logo.png
+image: /images/image1.jpg
 tags:
   - post
   - act

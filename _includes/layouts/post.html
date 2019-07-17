@@ -3,6 +3,8 @@ layout: layouts/base.html
 ---
 
 <article id="blog-content">
+  <img src="{{ image }}" alt="{{ title }} featured image" class="full">
   <h1>{{ title }}</h1>
+  <p class="byline">By {{ site.author }} · Published: {{ page.date | date: "%b %d, %Y" }} · Tags: {% for tag in tags %}{% if tag != "post" %}<a href="/tags/{{ tag }}/">{{ tag }}</a> {% endif %}{% endfor %}</p>
   {{ content }}
 </article>
