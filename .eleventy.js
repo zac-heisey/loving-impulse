@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
-  // Copy the `/images` directory
+  // Add passthrough directories
   eleventyConfig.addPassthroughCopy('images');
+  eleventyConfig.addPassthroughCopy('admin');
 
   // Manual passthrough template extensions
   return {
