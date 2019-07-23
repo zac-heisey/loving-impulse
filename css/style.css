@@ -113,8 +113,9 @@ main, article {
 
 img.full {
 	width: calc(100% - 2.5rem);
-	margin-left: 2.5rem;
+	max-width: 1208px;
 	max-height: 400px;
+	margin-left: 2.5rem;
 	object-fit: cover;
 }
 
