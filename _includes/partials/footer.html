@@ -6,8 +6,10 @@
 
 <!-- Scripts -->
 <script src="/js/main.js" charset="utf-8"></script>
-{% if title == 'Home' %}
+<!-- lazysizes (replace with Vanilla JS option > https://bit.ly/2SAZVnb) -->
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js" charset="utf-8"></script>
 <!-- Netlify Identify Widget -->
+{% if title == 'Home' %}
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", function(user) {
