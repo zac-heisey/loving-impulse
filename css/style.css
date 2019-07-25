@@ -34,6 +34,7 @@ body {
 
 h1, h2, h3 {
 	color: var(--color-4);
+	text-shadow: 2px 2px var(--color-3);
 	font-weight: bold;
 	margin: 1rem 0;
 }
@@ -61,8 +62,14 @@ hr {
 /* Header & Footer */
 
 header {
-  margin: 1rem auto;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	background: url('/images/header-bg.jpg') no-repeat center/cover;
+}
+
+h1#header-title {
+	margin-right: 2rem;
 }
 
 header, footer {
@@ -122,7 +129,8 @@ h1.title {
 	margin-left: 2.5rem;
 }
 
-h1.title > a:hover {
+h1.title > a:hover,
+h1#header-title > a:hover {
 	border-bottom: none;
 }
 
@@ -136,17 +144,56 @@ p.byline {
 
 /*== Media Queries ==*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 865px) {
 
-	/* List Layout */
+	/* Header */
 
-	img.thumbnail {
-		width: 100%;
-		object-fit: cover;
+	header {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		padding: 0 2rem;
+		margin: 0;
+		text-align: left;
+		position: relative;
 	}
 
-	.list-item {
-		flex-direction: column;
+	/* Mobile Menu */
+
+	a#menu-icon {
+		display: block;
+		width: 1.5rem;
+		margin-top: 1.75rem;
+		border: none;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+	li.menu-item {
+		display: block;
+	}
+
+	.main-menu.show a {
+		color: var(--color-2);
+	}
+
+	.main-menu.show a:hover {
+		border-bottom: 3px solid var(--color-2);
+	  padding-bottom: 1px;
+	  transition: 0.2s ease;
+	}
+
+	.main-menu.show {
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100vw;
+		margin: 0;
+		background-color: var(--color-4);
+		opacity: 0.95;
+		z-index: 1000;
 	}
 
 }
@@ -159,45 +206,6 @@ p.byline {
 		font-size: 2rem;
 	}
 
-	/* Header */
-
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0 2rem;
-		margin: 0;
-		text-align: left;
-		position: relative;
-	}
-
-	/* Mobile Menu */
-
-	a#menu-icon {
-		display: block;
-		width: 1.5rem;
-		border: none;
-	}
-
-	.main-menu {
-		display: none;
-	}
-
-	li.menu-item {
-		display: block;
-	}
-
-	.main-menu.show {
-		display: block;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100vw;
-		margin: 0;
-		background-color: var(--color-1);
-		opacity: 0.95;
-	}
-
 	/* Page & Post */
 
 	.wrapper {
@@ -207,7 +215,7 @@ p.byline {
 
 	img.full {
 		width: calc(100% - 1.5rem);
-		max-height: 143px;
+		max-height: 153px;
 		margin-left: 1.5rem;
 	}
 
@@ -218,8 +226,8 @@ p.byline {
 	/* List Layout */
 
 	p.byline {
-		font-size: 0.65rem;
-		transform-origin: -0.6rem -0.6rem;
+		font-size: 0.75rem;
+		transform-origin: -0.7rem -0.7rem;
 	}
 
 }
