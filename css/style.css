@@ -91,6 +91,35 @@ li.menu-item {
   margin: 16px;
 }
 
+/* Contact Form */
+
+label, input, textarea {
+	display: block;
+	font-family: 'EB Garamond', serif;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+input, textarea {
+	color: var(--color-4);
+	background-color: var(--color-3);
+	border: 1px solid var(--color-1);
+	border-radius: 4px;
+	padding: 0.75rem;
+	width: 50%;
+}
+
+input[type="submit"] {
+	color: var(--color-2);
+	background-color: var(--color-4);
+	margin-top: 2rem;
+	width: auto;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--color-1);
+}
+
 
 /*== Layout Styles ==*/
 
@@ -228,6 +257,12 @@ p.byline {
 	p.byline {
 		font-size: 0.75rem;
 		transform-origin: -0.7rem -0.7rem;
+	}
+
+	/* Contact Form */
+
+	input, textarea {
+		width: 100%;
 	}
 
 }
