@@ -4,24 +4,24 @@
     "url": "/about/"
   },
   {
-    "name": "Breathe",
-    "url": "/tags/breathe/"
+    "name": "Act",
+    "url": "/tags/act/"
   },
   {
-    "name": "Simplify",
-    "url": "/tags/simplify/"
+    "name": "Breathe",
+    "url": "/tags/breathe/"
   },
   {
     "name": "Eat",
     "url": "/tags/eat/"
   },
   {
-    "name": "Act",
-    "url": "/tags/act/"
-  },
-  {
     "name": "Move",
     "url": "/tags/move/"
+  },
+  {
+    "name": "Simplify",
+    "url": "/tags/simplify/"
   },
   {
     "name": "Contact",
