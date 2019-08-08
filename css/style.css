@@ -35,7 +35,6 @@ body {
 h1, h2, h3 {
 	color: var(--color-4);
 	font-family: 'Dancing Script', cursive;
-	font-weight: bold;
 	margin: 1rem 0;
 }
 
