@@ -1,6 +1,6 @@
 <footer>
   <div class="wrapper">
-    <p>Info TBD</p>
+    <p>© Loving Impulse <span id="date">DATE</span> | <a href="#">Sitemap</a></p>
   </div>
 </footer>
 
@@ -13,6 +13,13 @@
   menuIcon.addEventListener('click', function(event) {
     mainMenu.classList.toggle('show');
   }, false);
+
+  // Update copyright year in footer
+  var dateEl = document.querySelector('#date');
+  var date = new Date();
+  var currentYear = date.getFullYear();
+
+  dateEl.innerText = currentYear;
 </script>
 
 <!-- lazysizes (replace with Vanilla JS option > https://bit.ly/2SAZVnb) -->
