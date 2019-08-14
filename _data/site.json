@@ -1,6 +1,6 @@
 {
   "title": "loving impulse",
-  "url": "#",
+  "url": "https://www.lovingimpulse.com",
   "description": "The description for Loving Impulse will go here (max ~155 characters)",
   "logo": "/images/11ty-logo.png",
   "author": "Renee Nemmers",
@@ -14,12 +14,5 @@
       "account": "GitHub",
       "profile": "https://github.com/zac-heisey"
     }
-  ],
-  "details": {
-    "host": "Netlify",
-    "cms": "Coming Soon (Netlify CMS)",
-    "ecommerce": "Coming Soon",
-    "search": "Coming Soon",
-    "repo": "https://github.com/zac-heisey/test-eleventy-site"
-  }
+  ]
 }
