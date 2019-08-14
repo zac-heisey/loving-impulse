@@ -9,8 +9,8 @@ permalink: /tags/{{ tag }}/
 eleventyExcludeFromCollections: true
 ---
 
-<!-- Display 5 most recent posts for each tag -->
-{% assign first = collections[tag] limit:5 reversed | last %}
-{% for post in collections[tag] limit:5 reversed %}
+<!-- Display most recent posts for each tag -->
+{% assign first = collections[tag] reversed | last %}
+{% for post in collections[tag] reversed %}
   {% include partials/list.html %}
 {% endfor %}
