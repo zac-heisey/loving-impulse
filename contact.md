@@ -1,10 +1,10 @@
 ---
 layout: layouts/page.html
 title: Contact
-description: Contact Loving Impulse...
+description: Contact loving impulse...
 ---
 
-# Contact Loving Impulse
+# Contact loving impulse
 
 Thanks for your interest in contacting me! Please complete the form below and I will be in touch ASAP.
 
