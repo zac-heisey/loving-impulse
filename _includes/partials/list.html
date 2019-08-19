@@ -5,7 +5,7 @@
   {% else %}
   <img data-src="{{ post.data.image }}" alt="{{ post.data.title }} featured image" class="full lazyload">
   {% endif %}
-  <p class="byline">{{ post.date | date: "%b %d, %Y" }} · {% for tag in post.data.tags %}{% if tag != "post" %}<a href="/tags/{{ tag }}/">{{ tag | upcase }}</a> // {% endif %}{% endfor %}</p>
+  <p class="byline">{{ page.date | date: "%m-%d-%Y" }} | {% for tag in post.data.tags %}{% if tag != "post" %}<a href="/tags/{{ tag }}/">{{ tag | upcase }}</a>{% endif %}{% endfor %}</p>
   <p class="content">{{ post.templateContent | truncate: 250 }}</p>
 </section>
 <!-- Horizontal Rule -->
