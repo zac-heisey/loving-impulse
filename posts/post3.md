@@ -5,7 +5,6 @@ description: TBD
 image: /images/image3.jpg
 tags:
   - post
-  - breathe
   - simplify
 ---
 
